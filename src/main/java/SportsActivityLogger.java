@@ -40,4 +40,12 @@ public class SportsActivityLogger {
             return "Sport: " + sport + ", Hours: " + hours;
         }
     }
+
+    public static void main(String[] args){
+
+        SportsActivityLogger sportsActivityLogger = new SportsActivityLogger();
+        sportsActivityLogger.logActivity("Football", 5);
+        sportsActivityLogger.viewLoggedActivities();
+
+    }
 }

@@ -5,7 +5,7 @@ pipeline {
         // Define Docker Hub credentials ID
         DOCKERHUB_CREDENTIALS_ID = 'DOCKER_CREDENTIALS'
         // Define Docker Hub repository name
-        DOCKERHUB_REPO = 'dockdockdockdockdockdockdoc744/tempcon'
+        DOCKERHUB_REPO = 'dockdockdockdockdockdockdoc744/sports-logger'
         // Define Docker image tag
         DOCKER_IMAGE_TAG = 'latest'
     }
@@ -13,7 +13,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout code from Git repository
-                git 'https://github.com/joojaa7/TempConverter'
+                git 'https://github.com/joojaa7/Week7-DockJen'
             }
         }
         stage('Build Docker Image') {
